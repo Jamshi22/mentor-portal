@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+.error-main-heading_fnt {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.error-container {
+  padding: 6rem;
+}
+
+.error-heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+}
+
+.error-main-container {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+  align-items: center;
+}
+
+.error-main-fnt {
+  font-family: "Open Sans", sans-serif;
+  font-size: 105px;
+  line-height: 105px;
+  color: #0a9ced;
+  font-weight: 600;
+}
+
+.error-heading-fnt {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 0;
+}

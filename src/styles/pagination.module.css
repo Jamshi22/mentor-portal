@@ -1,0 +1,40 @@
+.pagination-container {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  .button {
+    padding: 8px 16px;
+    border: none;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .button:hover:not(:disabled) {
+    background-color: #ddd;
+  }
+  
+  .active {
+    background: linear-gradient(30deg, #34b4fc, #329ee6);
+    color: #fff;
+  }
+  
+  .disabled {
+    background-color: #e0e0e0;
+    cursor: not-allowed;
+  }
+  
+  .icon {
+    font-size: 16px;
+  }
+  
+  .ellipsis {
+    padding: 8px;
+    cursor: default;
+  }
+  

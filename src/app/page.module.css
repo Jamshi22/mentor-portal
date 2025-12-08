@@ -1,0 +1,192 @@
+/* page.module.css */
+.containers {
+  display: flex;
+  height: 100%;
+}
+
+.mainContent {
+  flex-grow: 1; /* Allow main content to grow */
+  display: flex;
+  flex-direction: column; /* Stack navbar on top of content */
+  overflow: hidden; /* Prevent overflow of content */
+  /* margin-left: 250px */
+}
+
+.contents {
+  flex-grow: 1; /* Allow contents to grow */
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding: 0px 20px 20px 20px;
+  background-color: #fff;
+}
+
+.content____ {
+  padding: 0px 20px 0px 20px;
+  background-color: #fff;
+}
+
+/* Optional: Navbar styling */
+.navbar {
+  position: fixed; /* Fix the navbar at the top */
+  width: calc(100% - 250px); /* Full width minus sidebar */
+  z-index: 1000; /* Ensure it's above other content */
+  background-color: #ffffff; /* Background color for navbar */
+}
+
+/* Optional: Sidebar styles (if needed) */
+.sidebar {
+  width: 250px; /* Fixed width of the sidebar */
+  background-color: #f7f7f7; /* Background color for sidebar */
+  /* Additional sidebar styles can be added here */
+}
+
+.tab_container_main {
+  height: 100%;
+}
+.coupon_content {
+  padding-bottom: 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.btn_coupon_container {
+  padding: 0.5rem;
+  border-radius: 8px;
+  color: #fff;
+  background: linear-gradient(30deg, #34b4fc, #007bcb);
+  font-size: 14px;
+  border: 2px solid #fff;
+  font-weight: 500;
+}
+
+.btn_coupon_container:hover {
+  background: linear-gradient(30deg, #34b4fc, #329ee6);
+  color: #fff;
+  cursor: pointer;
+}
+
+.tabs {
+  display: flex;
+  margin-bottom: 20px;
+  gap: 1rem;
+  position: sticky;
+  top: 0%;
+  background-color: #fff;
+}
+
+.tabs button {
+  padding: 10px 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  /* color: black; */
+  font-size: 14px;
+  font-weight: 400;
+  gap: 1rem;
+  border-radius: 8px;
+  /* background-color: #f3f4f6; */
+  border: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.activeTab {
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: #007bcb;
+  color: #fff;
+  border-radius: 8px;
+}
+
+.tab_container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: center;
+  align-self: stretch;
+  gap: 0.9rem;
+}
+
+.tab_active {
+  border-bottom: 1px solid #007bcb !important;
+  color: #007bcb;
+  font-family: Montserrat;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.3rem;
+  cursor: pointer;
+  transition: 0.2s border-bottom ease-in;
+}
+
+.tab_inactive {
+  font-size: 0.875rem;
+  line-height: 1.0625rem;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s color ease-in;
+}
+
+.mainContent_applicationLink {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column; /* Stack navbar on top of content */
+  overflow: hidden;
+}
+
+.contents_ {
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding: 0px 20px 20px 20px;
+  background-color: #fff;
+}
+
+/* .tabContent {
+  padding: 20px;
+  border-top: 1px solid #ddd;
+} */
+
+.main_container {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.toogle_container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: center;
+  align-self: stretch;
+  gap: 0.9rem;
+  margin-left: 2rem;
+}
+
+.toogle_fnt {
+  font-size: 0.875rem;
+  line-height: 1.0625rem;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  transition: color 0.2s ease-in;
+}
+
+.toogle_fnt_active {
+  border-bottom: 1px solid #007bcb !important;
+  color: #007bcb;
+  font-family: Montserrat;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.3rem;
+  cursor: pointer;
+  transition: border-bottom 0.2s ease-in;
+}

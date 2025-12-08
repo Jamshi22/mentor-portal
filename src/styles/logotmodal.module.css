@@ -1,0 +1,46 @@
+
+  
+  .modalContent {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    color: #000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .logoutText{
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .logoutText p {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+  .modalActions {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .confirmButton, .cancelButton {
+    padding: 0.5rem 2rem;
+    margin: 0 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+  .confirmButton {
+    background-color: #007bcb;
+    color: white;
+  }
+  
+  .cancelButton {
+    background-color: rgb(243, 241, 241);
+    color: #000;
+  }
+  

@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Varela+Round&display=swap');
+
+.body_container___{
+    width: 100%;
+
+}
+.delete_btn {
+    color: #fff;
+    border-radius: 4px;
+    background: #60c7c1;
+    text-decoration: none;
+    transition: all 0.4s;
+    line-height: normal;
+    min-width: 120px;
+    border: none;
+    min-height: 40px;
+    border-radius: 3px;
+    margin: 0 5px;
+    background: #ee3535;
+}
+
+.delete_btn:hover {
+    background: #f15e5e;
+}
+
+.delete_btn_cancel {
+    color: #fff;
+    border-radius: 4px;
+    background: #60c7c1;
+    text-decoration: none;
+    transition: all 0.4s;
+    line-height: normal;
+    min-width: 120px;
+    border: none;
+    min-height: 40px;
+    border-radius: 3px;
+    margin: 0 5px;
+    background: #c1c1c1;
+}
+
+.delete_btn_cancel:hover {
+    background: #a8a8a8;
+}
+
+.delete_title {
+    font-size: 1.2rem;
+    font-family: "Varela Round", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    text-align: center;
+}
+
+.heading_container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.heading____{
+    border-bottom: none !important;
+}
+
+.content_body_container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.footer_container{
+    width: 100%;
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

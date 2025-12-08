@@ -1,0 +1,130 @@
+.help_main_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: none;
+}
+
+.card {
+  width: 100%;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 60%;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.help_card_heading_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  gap: 0.5rem;
+  background-color: #f1f7fe;
+  padding: 2rem 0;
+  border-radius: 8px 8px 0 0;
+}
+
+.help_card_heading_fnt {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #333;
+  text-align: center;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 0;
+}
+
+.help_Card_para_fnt {
+  margin: 0;
+  padding: 0;
+  color: #848181;
+  font-family: "Inter";
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.015rem;
+  line-height: 1rem;
+}
+
+.help_card_main_container {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.help_card_form_box {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.help_label_container {
+  width: 30%;
+  display: block;
+  text-align: start;
+  font-family: "Inter";
+  font-size: 1rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.help_input_container {
+  width: 100%;
+  margin-bottom: 15px;
+  border: 1px solid #cacaca;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  padding: 10px 10px 10px 10px;
+}
+
+
+.help_input_container:hover{
+  border: 1px solid #1674ca;
+}
+
+.help_input_container:focus{
+  border: 1px solid #1674ca; 
+}
+
+
+.btn_container{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.help_btn{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 0.3rem 2rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 0.5rem;
+  background: linear-gradient(90deg, #34b4fc 0%, #007bcb 100%);
+  color: white;
+  cursor: pointer;
+  border: 2px solid #34b4fc;
+  font-family: var(--ff-secondary);
+  font-size: var(--ff-secondary-sub-para);
+  box-sizing: content-box;
+}

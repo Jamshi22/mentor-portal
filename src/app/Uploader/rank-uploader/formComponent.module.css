@@ -1,0 +1,216 @@
+/* General form layout */
+
+.main_container__ {
+  padding: 2rem;
+  height: 100%;
+}
+
+.button_container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+
+.delete_btn,
+.upload_btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.icon {
+  font-size: 1rem;
+}
+
+.delete_btn {
+  background-color: #ff4d4f;
+  color: white;
+}
+
+.delete_btn:hover {
+  background-color: #d9363e;
+}
+
+.upload_btn {
+  background-color: #007bcb;
+  color: white;
+}
+
+.upload_btn:hover {
+  background-color: #005fa3;
+}
+
+.form {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Form field styling */
+.form div {
+  margin-bottom: 15px;
+}
+
+.form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.form input[type="file"],
+.form select {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #fff;
+  color: black;
+}
+
+.form input[type="file"] {
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+.form select {
+  margin-top: 5px;
+}
+
+/* Button styling */
+/* .form button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .form button:hover {
+    background-color: #0056b3;
+  }
+  
+
+  .form button.submitting {
+    background-color: #28a745;
+    cursor: not-allowed;
+  } */
+
+.form button:disabled {
+  opacity: 0.7;
+}
+
+/* Conditional styling for dropdown fields */
+.form select:focus,
+.form input[type="file"]:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.form select {
+  cursor: pointer;
+}
+
+.submitButtonWrapper {
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.button:hover {
+  background-color: #45a049;
+}
+
+.submitting {
+  background-color: #f0ad4e;
+  color: #fff;
+  cursor: not-allowed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.submitting:disabled {
+  background-color: #f0ad4e;
+  color: #fff;
+}
+
+.button:disabled {
+  cursor: not-allowed;
+  display: flex;
+  align-items: center;
+}
+
+.spinner {
+  border: 3px solid #fff;
+  border-top: 3px solid #4caf50;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  animation: spin 1s linear infinite;
+}
+
+.table_container___{
+  height: 100%;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 600px) {
+  .form {
+    padding: 15px;
+  }
+
+  .form button {
+    padding: 10px;
+    font-size: 14px;
+  }
+}

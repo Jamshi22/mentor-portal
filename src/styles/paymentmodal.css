@@ -1,0 +1,278 @@
+.payment-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 1000;
+  width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+.close-payment-modal{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.close-icon{
+  font-size: 24px;
+  cursor: pointer;
+}
+
+
+
+.payment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.payment-form h1{
+  text-align: center;
+}
+.payment-form label {
+  margin-top: 10px;
+}
+
+.payment-form input {
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.payment-form button {
+  padding: 10px;
+  background: linear-gradient(30deg, #34b4fc, #007bcb);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.verification-form{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.verification-form h3{
+  text-align: center;
+}
+.verification-form label {
+  margin-top: 10px;
+}
+
+.verification-form input {
+  padding: 8px;
+  margin-top: 5px;
+  /* margin-bottom: 10px; */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* .verification-form button {
+  padding: 10px;
+  background: linear-gradient(30deg, #34b4fc, #007bcb);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+} */
+
+/* .payment-form button:hover {
+  background-color: #45a049;
+} */
+
+/* .overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+} */
+
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+.custom-dropdown {
+  position: relative;
+  /* width: 100%; */
+  cursor: pointer;
+  background: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  margin-top: 0.5rem;
+}
+
+.dropdown-header {
+  /* padding: 8px; */
+  font-size: 16px;
+  color: #333;
+}
+
+/* .dropdown-options {
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  right: 0%;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  margin-top: 0.2rem;
+}
+
+.dropdown-options div {
+  padding: 8px;
+  background: white;
+  transition: background 0.2s;
+}
+
+.dropdown-options div:hover {
+  background: #f1f1f1;
+} */
+
+
+.dropdown-options {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  border-radius: 5px;
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  right: 0%;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  margin-top: 0.2rem;
+}
+
+.dropdown-item {
+  display: flex;
+  justify-content: space-between; /* Space between the method name and the tick icon */
+  align-items: center;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background-color: #f1f1f1; /* Option hover effect */
+}
+
+.tick-icon {
+  margin-left: 8px; /* Add space between the method name and the icon */
+}
+
+
+.verification-form .buttonNormal {
+  padding: 10px;
+  background: linear-gradient(30deg, #34b4fc, #007bcb);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+.resend_btn_container{
+  display: flex;
+  gap:0.5rem;
+  align-items: center;
+}
+
+.resend_btn_container p {
+  margin-bottom: 0;
+}
+
+.verification-form  p{
+  margin: 0rem;
+}
+
+.verification-form  .resendbtn{
+  padding: 5px;
+  background: linear-gradient(30deg, #34b4fc, #007bcb);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+.verification-form .hideresendbtn{
+  display: none;
+}
+
+
+.verification-form .buttongrey{
+  padding: 10px;
+  background: rgb(204, 203, 203);
+  color: #000;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  cursor: not-allowed;
+}
+
+/* .input-error {
+  border: 1px solid red;
+} */
+
+.error-text {
+  color: red;
+  font-size: 14px;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.verification-form .input-error {
+  border: 1px solid red;
+}
+
+.dropdown-error {
+  border: 1px solid red; /* Add red border to dropdown header */
+}
+
+
+
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .terms-modal {
+    width: 95%;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .terms-modal {
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 0;
+  }
+}

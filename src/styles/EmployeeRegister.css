@@ -1,0 +1,203 @@
+.modal_header {
+  border-bottom: 0;
+}
+
+.employee-register_btn-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:1rem;
+  padding: 2rem;
+}
+
+.employee-register-form-logo-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.employee-validation-error__{
+  width: 120%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem;
+}
+
+.employee-validation-error-fnt{
+  color: #e33320;
+  font-family: "Inter";
+  font-size: 0.625rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1rem;
+  letter-spacing: 0.0125rem;
+  margin-top: -0.800rem;
+  margin-bottom: 0.5rem;
+}
+
+.employee-register-input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.employee-register_btn_open {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 0.3rem 2rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 0.5rem;
+  background: linear-gradient(90deg, #34b4fc 0%, #007bcb 100%);
+  color: white;
+  cursor: pointer;
+  border: 2px solid #34b4fc;
+  font-family: var(--ff-secondary);
+  font-size: var(--ff-secondary-sub-para);
+  box-sizing: content-box;
+}
+
+.employee-register_btn_open:hover {
+  cursor: pointer;
+  background: linear-gradient(30deg, #34b4fc, #329ee6);
+  color: #fff;
+}
+
+.register-main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.register-card {
+  height: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 500px;
+}
+
+.employee-register-form {
+  flex: 1;
+  padding: 20px;
+}
+
+/* input[type="email"],
+input[type="password"],
+input[type="text"]
+ {
+  width: 100%;
+  padding: 10px 15px; 
+  margin-bottom: 15px;
+  border: none;
+  border-bottom: 2px solid #ddd;
+  font-size: 16px;
+  outline: none;
+  padding: 10px 10px 10px 30px;
+} */
+
+.employee-register-input-box__ {
+  width: 100%;
+  margin-bottom: 15px;
+  border: 1px solid #cacaca;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  padding: 10px 10px 10px 30px;
+}
+
+.employee_register_input_validation_ {
+  margin-bottom: 15px;
+  width: 100%;
+  border: 1px solid red;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  padding: 10px 10px 10px 30px;
+}
+.employee-register-input-box__:focus {
+  border: 1px solid #1674ca;
+}
+
+.employee-register-input-box__:hover {
+  border: 1px solid #1674ca;
+}
+
+.employee-register-input_icon_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.employee-register-input-icon {
+  position: absolute;
+  top: 35%;
+  left: 2%;
+  transform: translateY(-50%);
+}
+
+.input_icon_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.input-icon {
+  position: absolute !important;
+  top: 35% !important;
+  left: 2% !important;
+  transform: translateY(-50%) !important;
+}
+
+.input-eye-icon {
+  position: absolute;
+  top: 35%;
+  left: 95%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.generate_password {
+ display: block;
+ color: #34b4fc;
+}
+
+.generate_password:hover {
+  color:green;
+}
+
+
+
+.employee-register-form-label {
+  color: black;
+  font-family: "Inter";
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.015rem;
+  line-height: 1rem;
+}
+
+.employeeregister_error {
+  color: #e33320;
+  font-family: "Inter";
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1rem;
+  letter-spacing: 0.0125rem;
+  margin-top: -1rem;
+  margin-bottom: 0.5rem;
+}

@@ -1,0 +1,230 @@
+
+.modal_header {
+  border-bottom: 0;
+  
+}
+
+.register_btn-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  gap:1rem;
+}
+
+.register-form-logo-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.register-input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.register_btn_open {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 0.3rem 2rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 0.5rem;
+  background: linear-gradient(90deg, #34b4fc 0%, #007bcb 100%);
+  color: white;
+  cursor: pointer;
+  border: 2px solid #34b4fc;
+  font-family: var(--ff-secondary);
+  font-size: var(--ff-secondary-sub-para);
+  box-sizing: content-box;
+
+}
+
+.register_btn_open:hover {
+  background: linear-gradient(30deg, #34b4fc, #329ee6);
+    color: #fff;
+    cursor: pointer;
+}
+
+.register-main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.register-card {
+  height: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 500px;
+}
+
+.register-form {
+  flex: 1;
+  padding: 20px;
+}
+
+/* input[type="email"],
+  input[type="password"],
+  input[type="text"] {
+    width: 100%;
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    font-size: 16px;
+    outline: none;
+    padding: 10px 10px 10px 30px;
+  } */
+
+.register-input-form-label {
+  color: black;
+  font-family: "Inter";
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.015rem;
+  line-height: 1rem;
+}
+
+.register_input_container_box {
+  width: 100%;
+  margin-bottom: 15px;
+  border: 1px solid #cacaca;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  padding: 10px 10px 10px 30px;
+}
+
+.register_input_container_box_validation_error {
+  width: 100%;
+  margin-bottom: 15px;
+  border: 1px solid red;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  padding: 10px 10px 10px 30px;
+}
+
+.register_input_container_box:focus {
+  border: 1px solid #1674ca;
+}
+
+.register_input_container_box:hover {
+  border: 1px solid #1674ca;
+}
+
+.react-tel-input .form-control:focus {
+  border: 1px solid #1674ca;
+  box-shadow: none;
+}
+
+.react-tel-input .form-control:hover {
+  border: 1px solid #1674ca;
+  box-shadow: none;
+}
+
+.register-input_icon_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.register-input-icon {
+  position: absolute;
+  top: 35%;
+  left: 2%;
+  transform: translateY(-50%);
+}
+
+.register-stream-select {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.register-ug-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.register-stream-heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.register-stream-radio-text {
+  font-family: var(--ff-secondary);
+  font-size: var(--ff-secondary-para);
+}
+
+.errormessage_lead {
+  color: #e33320;
+  font-family: "Inter";
+  font-size: 0.625rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1rem;
+  letter-spacing: 0.0125rem;
+  margin-top: -1rem;
+  margin-bottom: 0.5rem;
+}
+
+.errormessage_phone_number_error {
+  color: #e33320;
+  font-family: "Inter";
+  font-size: 0.625rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1rem;
+  letter-spacing: 0.0125rem;
+}
+
+.employee_label__ {
+  color: black;
+  font-family: "Inter";
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.015rem;
+  line-height: 1rem;
+}
+
+/* Employee Register Validation */
+.register_btn_validation_container{
+  width: 120%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem;
+}
+
+.register_validation_fnt{
+  color: #e33320;
+  font-family: "Inter";
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1rem;
+  letter-spacing: 0.0125rem;
+  margin-top: -0.800rem;
+  margin-bottom: 0.5rem;
+}

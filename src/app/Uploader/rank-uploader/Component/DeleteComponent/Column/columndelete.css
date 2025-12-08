@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Varela+Round&display=swap");
+
+.table-container {
+  max-height: 500px;
+  padding-right: 10px;
+  margin-right: -10px;
+  box-sizing: content-box;
+  border: 1px solid #ddd;
+}
+
+.table-container::-webkit-scrollbar {
+  width: 6px;
+}
+.table-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+.table-container::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+}
+
+.styled-table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.9em;
+  font-family: "Inter", sans-serif;
+  cursor: pointer;
+}
+
+.styled-table thead th {
+  position: sticky;
+  top: 0;
+  background-color: #007bcb;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 20px 12px;
+  text-align: center;
+  z-index: 0;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 12px 15px;
+  text-align: center;
+}
+
+.styled-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.styled-table tbody tr.active-row {
+  font-weight: bold;
+  color: #009879;
+}
+
+td {
+  font-size: 13px;
+  font-weight: 400;
+  padding: 24px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+}
+
+.table_column__ {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.button_container___ {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn__Delete {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  background-color: #ff4d4f;
+  color: white;
+}
+
+.loading_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border:0px;
+}
+
+.fnt___ {
+  text-align: center;
+}
+
+.test___ {
+  border: 1px solid red;
+}
+
+.styled-table tr:hover {
+  background-color: #ddd;
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.3s ease;
+}

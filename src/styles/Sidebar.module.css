@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.sidebars {
+  background-color: white;
+  width: 200px;
+  transition: width 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: 100vh;
+  position: relative;
+  z-index: 11;
+  box-shadow: 3px -8px 2px -2px rgba(0, 0, 0, 0.2) !important;
+}
+
+
+
+
+
+/* .sidebars {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px; 
+  height: 100vh;
+  background-color: white;
+  z-index: 11;
+  box-shadow: 3px -8px 2px -2px rgba(0, 0, 0, 0.2);
+  transition: width 0.3s ease;
+} */
+
+.collapsed {
+  width: 80px;
+  transition: width 0.3s ease;
+}
+
+.menuButton {
+  position: absolute;
+  right: 0;
+  top: 4.7rem;
+  border: none;
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transform: translateX(50%);
+  font-size: 1.5rem;
+}
+
+.sidebar__top {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem;
+  
+  /* border-bottom: 1px solid rgb(194, 193, 193); */
+}
+
+.sidebar__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 1rem;
+  background-color: #007bcb;
+  color: #fff;
+  padding: 0.5rem;
+  text-decoration: none;
+}
+
+.sidebar__logo_name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  opacity: 1;
+  width: auto;
+  transition: opacity 0.5s ease-in-out, width 0.3s ease-in-out;
+}
+
+.sidebar_logo_none {
+  opacity: 0;
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: opacity 0.5s ease-in-out, width 0.3s ease-in-out;
+}
+
+.menu_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 10px;
+
+  overflow-y: auto;
+
+  /* Firefox */
+  scrollbar-width: thin;
+  scrollbar-color: #c1c1c1 transparent;
+}
+
+/* WebKit (Chrome, Safari, Edge) */
+.menu_container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.menu_container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.menu_container::-webkit-scrollbar-thumb {
+  background-color: #c1c1c1;
+  border-radius: 4px;
+}
+
+.menu {
+  list-style: none;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+.sidebar__link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: 400;
+  gap: 1rem;
+  border-radius: 8px;
+  background-color: #f3f4f6;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.sidebar__link__active {
+  font-size: 20px;
+  font-weight: 400;
+  background-color: #007bcb;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  position: relative;
+}
+.menulist {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 1rem;
+}
+
+.sidebar__link:hover {
+  background-color: #007bcb;
+  color: #fff;
+  transform: translateX(5px);
+  cursor: pointer;
+}
+
+.sidebar__icon {
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  line-height: 0px;
+  padding-left: 8px;
+}
+
+.sidebar__text {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out, width 0.3s ease-in-out;
+  white-space: nowrap;
+}
+
+.collapsedText {
+  opacity: 0;
+  width: 0;
+  overflow: hidden;
+}
+
+.tooltip {
+  position: absolute;
+  padding: 10px;
+  border-radius: 4px;
+  z-index: 1000;
+  top: 10%;
+  width: 90px;
+  left: 100%;
+  text-align: center;
+  margin-left: 1rem;
+  font-size: 12px;
+  font-weight: 400;
+  background: #000;
+  backdrop-filter: blur(0px);
+}
+
+.logout_container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  color: black;
+  font-size: 20px;
+  font-weight: 400;
+  border-radius: 8px;
+  background-color: #f6f3f3;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.collapsed_logout{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  color: black;
+  font-size: 20px;
+  font-weight: 400;
+  border-radius: 8px;
+  background-color: #f6f3f3;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  justify-content:  flex-end
+}
+
+.logout_container .logout_icon {
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  padding-left: 8px;
+  line-height: 0px;
+}
+
+.logout_container .logout_text {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out, width 0.3s ease-in-out;
+  white-space: nowrap;
+}
+.logout_container:hover {
+  background-color: #f0290f;
+  color: #fff;
+  transform: translateX(5px);
+  cursor: pointer;
+}
+
+.logouttooltip {
+  position: absolute;
+  display: none;
+  padding: 10px;
+  border-radius: 4px;
+  z-index: 1000;
+  top: 10%;
+  width: 90px;
+  left: 100%;
+  text-align: center;
+  margin-left: 1rem;
+  font-size: 12px;
+  font-weight: 400;
+  background: #000;
+  backdrop-filter: blur(0px);
+}
+
+.logout_container:hover .logouttooltip {
+  display: block;
+}
+
+.gethelp_container{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  color: black;
+  font-size: 20px;
+  font-weight: 400;
+  border-radius: 8px;
+  background-color: #f6f3f3;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  /* justify-content: end; */
+}
+.collapsed_gethelp{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  color: black;
+  font-size: 20px;
+  font-weight: 400;
+  border-radius: 8px;
+  background-color: #f6f3f3;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  justify-content:  flex-end;
+}
+.gethelp_container .gethelp_icon {
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  padding-left: 8px;
+  line-height: 0px;
+}
+.gethelp_container .gethelp_text {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out, width 0.3s ease-in-out;
+  white-space: nowrap;
+}
+.gethelp_container:hover {
+  background-color: rgb(0, 119, 255);
+  color: #fff;
+
+  cursor: pointer;
+}
+.gethelptooltip {
+  position: absolute;
+  display: none;
+  padding: 10px;
+  border-radius: 4px;
+  z-index: 1000;
+  top: 10%;
+  width: 90px;
+  left: 100%;
+  text-align: center;
+  margin-left: 1rem;
+  font-size: 12px;
+  font-weight: 400;
+  background: #000;
+  backdrop-filter: blur(0px);
+}
+.gethelp_container:hover .gethelptooltip {
+  display: block;
+}
+
+
+
+.buttongrey{
+  background-color: grey;
+  color: #000;
+}

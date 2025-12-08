@@ -1,0 +1,58 @@
+/* Fullscreen overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent dark background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  /* Loader animation */
+  .loader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 80px; /* Adjust width for dot spacing */
+  }
+  
+  .dot {
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: #3498db; /* Blue color */
+    animation: bounce 0.6s infinite alternate;
+  }
+  
+  /* Create a bounce effect for each dot */
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-20px);
+    }
+  }
+  
+  /* Delay each dot's animation for a staggered effect */
+  .dot:nth-child(1) {
+    animation-delay: 0s;
+  }
+  
+  .dot:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  
+  .dot:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+  
+  .dot:nth-child(4) {
+    animation-delay: 0.6s;
+  }
+  

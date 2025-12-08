@@ -1,0 +1,23 @@
+.inputStylesContainer {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    width: 100%;
+    max-width: 600px;
+}
+
+.inputStylesContainer label {
+    font-weight: bold;
+    color: #333;
+}
+
+.inputStylesContainer select {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #fff;
+    color: black;
+}

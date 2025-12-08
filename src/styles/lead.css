@@ -1,0 +1,89 @@
+/* General Styles */
+
+  
+  /* Container for the component */
+  .containers {
+    padding:0 20px;
+    /* max-width: 1200px; */
+    width: 100%;
+    /* margin: 0 auto; */
+    background-color: #ffffff;
+    border-radius: 8px;
+    
+  }
+  
+  /* Dashboard component styling */
+  .title {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Table Styles */
+  .leads-table {
+    font-family: "Inter", sans-serif;
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .leads-table th {
+    background-color: #0a9ced;
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 20px 12px;
+    padding: 1rem 0.5rem;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+  }
+
+  .leads-table thead th:last-child {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+  
+  .leads-table thead th:first-child {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+  
+  .leads-table thead tr:first-child {
+    border: none !important;
+  }
+
+  .leads-table td{
+    padding: 24px;
+    border-bottom: 1px solid #ddd;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: center;
+  }
+/*   
+  .leads-table th {
+    background-color: #f8f8f8;
+    font-weight: bold;
+  } */
+  
+  /* .leads-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  } */
+  
+  .leads-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Loading and Error Message Styles */
+  .loading {
+    color: #007bff;
+  }
+  
+  .error {
+    color: #dc3545;
+  }
+  

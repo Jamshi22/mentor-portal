@@ -1,0 +1,140 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.tableContainer {
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0px 4px 16px 0px rgba(50, 50, 71, 0.06),
+      0px 4px 8px 0px rgba(0, 100, 168, 0.08);
+    /* margin-top: 40px; */
+    /* max-width: 100%;
+    max-height: 100%; */
+    overflow: scroll;
+}
+
+.tableContainer::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.tableContainer::-webkit-scrollbar {
+  width: 6px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.tableContainer::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: lightgray;
+}
+
+.tableContainer::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.tableContainer::-webkit-scrollbar {
+  height: 6px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.tableContainer::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: lightgray;
+}
+
+.tableContainer .paymentTable {
+  width: 100%;
+  border-collapse: collapse;
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 0px 0px 8px 0px rgba(0, 100, 168, 0.08),
+    0px 0px 16px 0px rgba(50, 50, 71, 0.06);
+  cursor: default;
+}
+
+.paymentTable thead {
+  background: #0a9ced;
+  position: sticky;
+  top: 0;
+}
+
+.paymentTable thead th {
+  padding: 1rem 0.5rem;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  text-align: center;
+ 
+}
+
+.paymentTable thead th:last-child {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.paymentTable thead th:first-child {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.paymentTable thead tr:first-child {
+  border: none !important;
+}
+
+.paymentTable td {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+  padding: 1rem 0.5rem;
+}
+
+.paymentTable tr {
+  border-bottom: 1px solid #dde1e6;
+}
+
+.paymentTable > tbody {
+  background-color: white;
+}
+
+.paymentTable > tbody > tr:hover {
+  background-color: rgb(247, 247, 247);
+}
+
+.table_pagination{
+  display: flex;
+  justify-content: flex-end;
+  
+}
+
+
+.table_icons{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    cursor: pointer;
+    
+}
+
+.table_pagination{
+  display: flex;
+  justify-content: flex-end;
+  
+}
+
+
+.nodata{
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+  padding: 1rem 0.5rem;
+}

@@ -1,0 +1,29 @@
+/* Main container */
+.containers {
+  display: flex;
+  flex-direction: row;
+}
+
+.mainContent {
+  flex: 1;
+  /* padding: 20px; */
+}
+
+/* Content area */
+.contents {
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.btncontainer {
+  padding: 0.8rem 0.5rem;
+  border-radius: 14px;
+  color: #fff;
+  background: linear-gradient(30deg, #34b4fc, #007bcb);
+  font-size: 14px;
+  border: 2px solid #fff;
+  font-weight: 500;
+}

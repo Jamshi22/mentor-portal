@@ -1,0 +1,80 @@
+/* .tableWrapper {
+  overflow-x: auto;
+  padding: 1rem;
+  height: 40rem;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+
+.table th {
+  background-color: #00aaff;
+  color: white;
+  text-align: left;
+  padding: 12px;
+    position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.table td {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.subText {
+  color: gray;
+  font-size: 0.8rem;
+} */
+
+.tableWrapper {
+  max-height: 40rem;         /* Limits the table height */
+  overflow-y: auto;          /* Enables vertical scrolling */
+  overflow-x: auto;          /* Enables horizontal scrolling if needed */
+  /* padding: 1rem; */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: white;
+}
+
+/* Table styling */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: sans-serif;
+  min-width: 600px; /* Optional: ensures consistent width for sticky */
+}
+
+/* Table header (sticky) */
+.table th {
+  background-color: #00aaff;
+  color: white;
+  text-align: left;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 0; /* Makes header stay above rows */
+}
+
+/* Table rows */
+.table td {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+/* Optional: hover effect */
+.table tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* Subtext style (if used) */
+.subText {
+  color: gray;
+  font-size: 0.8rem;
+}
+
